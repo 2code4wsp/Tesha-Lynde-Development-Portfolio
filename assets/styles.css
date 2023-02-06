@@ -26,3 +26,39 @@ body {
     font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 
+.topnav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: coral;
+}
+
+ul.topnav li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.topnav {
+    position: right;
+}
+
+nav a:hover {
+    background-color: aquamarine;
+}
+
+nav a.active {
+    background-color: --light;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav bottom,
+    .topnav float: none;
+}
+
+main {
+    margin-top: 15px;
+    margin-bottom: 45px;
+}
+
+
