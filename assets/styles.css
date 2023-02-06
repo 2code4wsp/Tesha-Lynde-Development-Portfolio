@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 :root {
-    --earth: rgba(188, 76, 76, 0.729);
+    --soft-purple: rgb(214, 74, 236);
     --fern: rgb(6, 114, 6);
     --light: rgb(236, 202, 159);
     --soft-blue: rgb(74, 74, 252);
@@ -21,7 +21,7 @@ header {
     justify-content: baseline;
     flex-wrap: wrap;
     align-items: center;
-    background-color: thistle;
+    background-color:#7cb173;
 
 }
 
@@ -29,7 +29,7 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: rgb(253, 164, 62);
+    background-color: rgb(188, 190, 188);
 }
 
 ul.topnav li {
@@ -50,9 +50,9 @@ nav {
 
 nav a {
     text-decoration: none;
-    padding: 5px 10px;
-    color: var(--light);
-    margin-right: 10px;
+    padding: 25px 15px;
+    color: var(--soft-blue);
+    margin-right: 0px;
     background-image: linear-gradient(270deg, var(--barely-blue) 0%, var(--fern) 100%);
     background-repeat: no-repeat;
     background-size: 100% 0.2em;
@@ -62,7 +62,7 @@ nav a {
   }
 
 nav a:hover {
-    background-color: aquamarine;
+    background-color: rgb(132, 255, 216);
 }
 
 /* do I even need the media screen? why is it wrong 
@@ -78,19 +78,14 @@ main {
 }
 
 .bio-banner {
-    background-color: var(--fern);
-    background-image: url(https://photos.app.goo.gl/315iAb9cuLdzaBrG8); 
+    background-color:var(--fern);
+    background-image: bio-banner-resized.jpg;
     background-size: cover;
     background-position: center;
-    padding: 10px;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    text-align: start, center;
 }
 
 .bio-banner div {
-    flex: none;
+    flex: 0 0 90%;
 }
 
 .bio-banner h2 {
@@ -131,7 +126,8 @@ main {
 
 .bio {
     border-radius: 3px;
-    background-image: url(https://photos.app.goo.gl/8rBoe9cbLrnMJbQQA);
+    background-image:avatar-resized.jpg;
+    background-color:var(--soft-purple);
 }
 
 .flex-container {
@@ -141,9 +137,9 @@ main {
   }
   
   .flex-item {
-    border: 5px solid var(--secondary);
-    background-color: var(--primary);
-    color: var(--tertiary);
+    border: 5px solid var(--fern);
+    background-color: var(--barely-blue);
+    color: var(black);
     min-height: 150px;
     max-height: 150px;
     flex-basis: calc(50% - 1em);
@@ -164,11 +160,11 @@ main {
 }
 
 .flex-item:hover {
-  background-color: var(--earth);
+  background-color: var(--barely-blue);
 }
 
 .flex-item div {
-  background-color: rgb(145, 108, 108);
+  background-color: var(--fern);
   padding: 8px 10px;
 }
 
