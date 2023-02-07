@@ -16,6 +16,7 @@ body {
 
 header {
     padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: row;
     justify-content: baseline;
@@ -65,12 +66,11 @@ nav a:hover {
     background-color: rgb(132, 255, 216);
 }
 
-/* do I even need the media screen? why is it wrong 
+h3 {
+    font-size: large;
+    color: black;
 
-@media screen and (max-width: 600px) {
-    .topnav bottom,
-    .topnav float: none;
-} */
+}
 
 main {
     margin-top: 15px;
@@ -79,9 +79,9 @@ main {
 
 .bio-banner {
     background-color:var(--fern);
-    background-image: bio-banner-resized.jpg;
+    background-image: "bio-banner.jpg";
     background-size: cover;
-    background-position: center;
+    background-position: absolute;
 }
 
 .bio-banner div {
@@ -126,8 +126,8 @@ main {
 
 .bio {
     border-radius: 3px;
-    background-image:avatar-resized.jpg;
-    background-color:var(--soft-purple);
+    background-image: "avatar-resized.jpg";
+    background-color: var(--soft-purple);
 }
 
 .flex-container {
@@ -137,23 +137,20 @@ main {
   }
   
   .flex-item {
-    border: 5px solid var(--fern);
+    border: 15px solid var(--fern);
     background-color: var(--barely-blue);
+    background-position: absolute;
     color: var(black);
     min-height: 150px;
     max-height: 150px;
-    flex-basis: calc(50% - 1em);
     display: flex;
     align-items: flex-end;
-    padding: 0 0 20px 0;
-    margin: 0.5em;
-    text-decoration: none;
-    background-blend-mode: soft-light;
+    padding: 0;
+    margin: 0;
     background-size: 150%;
-    transition: all 0.5s;
     font-size: 0.9rem;
   }
-
+/*how do I deal with thisvvv*/
   .flex-item:first-child {
     min-height: 400px;
     flex-basis: 100%;
@@ -168,3 +165,26 @@ main {
   padding: 8px 10px;
 }
 
+/*add photo project images */
+
+.flower {
+    background-image: "flower.jpg";
+}
+
+.fractal-forward {
+    background-image: "fractal-forward.jpg";
+}
+
+.portfoto {
+    background-image: "portfolio-1.png";
+}
+
+.shipwreck {
+    background-image: "My project-1 (2).png";
+}
+
+@media screen and (max-width: 600px) {
+    div.example {
+      display: none;
+    }
+  }
