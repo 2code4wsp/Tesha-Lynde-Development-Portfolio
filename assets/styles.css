@@ -133,7 +133,8 @@ main {
 .flex-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
   }
   
   .flex-item {
@@ -152,7 +153,7 @@ main {
   }
 /*how do I deal with thisvvv*/
   .flex-item:first-child {
-    min-height: 400px;
+    min-height: 150px;
     flex-basis: 100%;
 }
 
@@ -179,9 +180,6 @@ main {
     background-image: "portfolio-1.png";
 }
 
-.shipwreck {
-    background-image: "My project-1 (2).png";
-}
 
 @media screen and (max-width: 600px) {
     div.example {
